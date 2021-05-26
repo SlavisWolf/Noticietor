@@ -23,6 +23,10 @@ class HomeController: BaseController {
         labelNoNews.text = "no_news".localized()
         labelNoNews.textColor = Colors.color3
         labelNoNews.font = Fonts.regular(15)
+        
+        ArticleRequest().getArticles("Actualidad").subscribe(onSuccess: { articles in
+            
+        }).disposed(by: disposeBag)
     }
     
 
