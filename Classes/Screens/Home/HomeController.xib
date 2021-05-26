@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeController" customModule="Unisys" customModuleProvider="target">
+            <connections>
+                <outlet property="labelNoNews" destination="1mm-Vf-7Wi" id="zWb-mb-hqp"/>
+                <outlet property="topBar" destination="4Yb-E5-1Ie" id="wip-bn-KjS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yb-E5-1Ie" userLabel="topbar" customClass="TopBar" customModule="Unisys" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                </view>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No hay grupos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mm-Vf-7Wi" userLabel="No hay noticias">
+                    <rect key="frame" x="151.5" y="437.5" width="111" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4Yb-E5-1Ie" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.1" priority="900" id="H6U-3T-6Qy"/>
+                <constraint firstAttribute="trailing" secondItem="4Yb-E5-1Ie" secondAttribute="trailing" id="QYS-0P-Acw"/>
+                <constraint firstItem="4Yb-E5-1Ie" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dr6-2h-YK0"/>
+                <constraint firstItem="1mm-Vf-7Wi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="nBX-je-hf9"/>
+                <constraint firstItem="1mm-Vf-7Wi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r74-kX-ra0"/>
+                <constraint firstItem="4Yb-E5-1Ie" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rVb-EO-XYJ"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
