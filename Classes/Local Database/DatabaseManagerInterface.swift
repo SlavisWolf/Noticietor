@@ -24,5 +24,5 @@ protocol DatabaseManagerInterface {
     // Mapeo
     func mappingContextObject(_ object: ObjectContext) -> Model
     func mappingContextObjects(_ objects: [ObjectContext]) -> [Model]
-    func castToContextObject(_ group: Model)  -> ObjectContext
+    func castToContextObject(_ model: Model)  -> ObjectContext
 }
