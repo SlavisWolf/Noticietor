@@ -8,3 +8,5 @@
 //
 
 "news" = "Noticias";
+"no_news" = "No hay noticias";
+"new" = "Noticia";

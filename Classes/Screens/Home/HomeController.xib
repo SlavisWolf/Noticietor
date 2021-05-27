@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeController" customModule="Unisys" customModuleProvider="target">
             <connections>
                 <outlet property="labelNoNews" destination="1mm-Vf-7Wi" id="zWb-mb-hqp"/>
+                <outlet property="tableArticles" destination="qGP-yX-3bi" id="UEs-oL-GOr"/>
                 <outlet property="topBar" destination="4Yb-E5-1Ie" id="wip-bn-KjS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,21 +20,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yb-E5-1Ie" userLabel="topbar" customClass="TopBar" customModule="Unisys" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yb-E5-1Ie" userLabel="topbar" customClass="TopSearchBar" customModule="Unisys" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="116.5"/>
                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                 </view>
-                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No hay grupos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mm-Vf-7Wi" userLabel="No hay noticias">
-                    <rect key="frame" x="151.5" y="437.5" width="111" height="21"/>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No hay Noticias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mm-Vf-7Wi" userLabel="No hay noticias">
+                    <rect key="frame" x="147.5" y="437.5" width="119.5" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qGP-yX-3bi">
+                    <rect key="frame" x="0.0" y="116.5" width="414" height="779.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="4Yb-E5-1Ie" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.1" priority="900" id="H6U-3T-6Qy"/>
+                <constraint firstItem="qGP-yX-3bi" firstAttribute="top" secondItem="4Yb-E5-1Ie" secondAttribute="bottom" id="35o-wl-6Pc"/>
+                <constraint firstItem="4Yb-E5-1Ie" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.13" priority="900" id="H6U-3T-6Qy"/>
+                <constraint firstAttribute="trailing" secondItem="qGP-yX-3bi" secondAttribute="trailing" id="Iho-2h-0ur"/>
+                <constraint firstAttribute="bottom" secondItem="qGP-yX-3bi" secondAttribute="bottom" id="Jc9-Xy-cAF"/>
                 <constraint firstAttribute="trailing" secondItem="4Yb-E5-1Ie" secondAttribute="trailing" id="QYS-0P-Acw"/>
+                <constraint firstItem="qGP-yX-3bi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TVT-9k-sku"/>
                 <constraint firstItem="4Yb-E5-1Ie" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dr6-2h-YK0"/>
                 <constraint firstItem="1mm-Vf-7Wi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="nBX-je-hf9"/>
                 <constraint firstItem="1mm-Vf-7Wi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r74-kX-ra0"/>
@@ -43,9 +53,6 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

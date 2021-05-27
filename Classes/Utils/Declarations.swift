@@ -17,3 +17,7 @@ func secondThread(_ code: @escaping (() -> ())) {
         code()
     }
 }
+
+func getScreenWidthPercentage(_ percentage: CGFloat) -> CGFloat {
+    UIScreen.main.bounds.width * percentage
+}

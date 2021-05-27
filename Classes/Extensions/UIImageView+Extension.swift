@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 
 enum ImageError: String {
-    case groupDefault = "groupdefault"
+    case articleDefault = "defaultarticle"
 }
 extension UIImageView {
     

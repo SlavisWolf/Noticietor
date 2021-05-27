@@ -7,5 +7,5 @@
 
 
 class Formatter {
-    static let serverDateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"  //"yyyy-MM-dd'T'HH:mm:ss.SSSX"
+    static let articleFormat = "dd/MM/yyyy"
 }

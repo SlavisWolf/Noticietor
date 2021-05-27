@@ -8,7 +8,7 @@
 import  UIKit
 extension Date {
     
-    func toString(_ format: String = Formatter.serverDateFormat) -> String {
+    func toString(_ format: String = Formatter.articleFormat) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = format
         return formatter.string(from: self)

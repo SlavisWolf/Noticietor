@@ -13,7 +13,7 @@ extension String {
         NSLocalizedString(self, comment: "")
     }
     
-    func toDate(format: String = Formatter.serverDateFormat) -> Date? {
+    func toDate(format: String = Formatter.articleFormat) -> Date? {
         let formatter = DateFormatter()
         formatter.dateFormat = format
         return formatter.date(from: format)

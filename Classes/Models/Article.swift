@@ -25,14 +25,12 @@ class Article {
         model.imageUrl = URL(string: params["urlToImage"] as! String)
         model.publishedDate = Date.castStringWith8601Format(params["publishedAt"] as! String)!
         model.source = ((params["source"] as! Params)["name"] as! String)
-        model.id = model.genericId()
-        
-        print(model.id)
+        model.id = model.createId()
         return model
     }
     
-    private func genericId() -> Int {
-        "\(title ?? "")_\(source ?? "")_\(publishedDate.toString() )".persistantHash
+    private func createId() -> Int {
+        "\(title ?? "")_\(source ?? "")_\(publishedDate.toStringWith8601() )".persistantHash
     }
 
     static func mappingArray(_ list: [Params]) -> [Article] {
