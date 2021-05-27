@@ -14,13 +14,12 @@ protocol DatabaseManagerInterface {
     // Metodos para modificar
     func save(_ model: Model)
     func saveList(_ models: [Model])
-    func deleteObsoleteValues(_ validIds: [Int])
     func createOrUpdate(_ model: Model)
     
     // Metodos para leer
-    func get(_ id: Int) -> Model?
-    func getAll(_ predicate: NSPredicate?) -> [Model]
-    func getObject(_ id: Int) -> ObjectContext?
+    func get(_ id: String) -> Model?
+    func getAll(_ predicate: NSPredicate?, sort: [NSSortDescriptor]?) -> [Model]
+    func getObject(_ id: String) -> ObjectContext?
     
     // Mapeo
     func mappingContextObject(_ object: ObjectContext) -> Model

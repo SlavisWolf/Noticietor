@@ -20,10 +20,6 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yb-E5-1Ie" userLabel="topbar" customClass="TopSearchBar" customModule="Unisys" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="116.5"/>
-                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                </view>
                 <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No hay Noticias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mm-Vf-7Wi" userLabel="No hay noticias">
                     <rect key="frame" x="147.5" y="437.5" width="119.5" height="21"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -35,6 +31,10 @@
                     <rect key="frame" x="0.0" y="116.5" width="414" height="779.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Yb-E5-1Ie" userLabel="topbar" customClass="TopSearchBar" customModule="Unisys" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="116.5"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>

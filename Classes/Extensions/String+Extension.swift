@@ -18,10 +18,4 @@ extension String {
         formatter.dateFormat = format
         return formatter.date(from: format)
     }
-    
-    var persistantHash: Int {
-        return self.utf8.reduce(5381) {
-            ($0 << 5) &+ $0 &+ Int($1)
-        }
-    }
 }

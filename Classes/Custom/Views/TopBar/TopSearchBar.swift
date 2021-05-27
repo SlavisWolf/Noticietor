@@ -39,6 +39,7 @@ class TopSearchBar: ViewDecoded, UITextFieldDelegate {
         let image = UIImage(named: "nav_search")
         imageView.image = image
         fieldSearch.leftView = imageView
+        fieldSearch.clearButtonMode = .always
         
     }
 
@@ -78,6 +79,11 @@ class TopSearchBar: ViewDecoded, UITextFieldDelegate {
     //MARK: UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         delegate.fieldReturn(textField.text)
+        return true
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        delegate.fieldReturn(nil)
         return true
     }
 }

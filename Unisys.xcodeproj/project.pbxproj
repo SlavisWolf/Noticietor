@@ -24,6 +24,7 @@
 		EB76599526600DA900CF366B /* ArticleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76599426600DA900CF366B /* ArticleInteractor.swift */; };
 		EB76599A2660120700CF366B /* ArticleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7659982660120700CF366B /* ArticleController.swift */; };
 		EB76599B2660120700CF366B /* ArticleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB7659992660120700CF366B /* ArticleController.xib */; };
+		EB7659A526601D7D00CF366B /* ArticleDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7659A426601D7D00CF366B /* ArticleDatabaseManager.swift */; };
 		EB84228E26596F9C007468C6 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB84228D26596F9C007468C6 /* MainNavigationController.swift */; };
 		EB842298265970E6007468C6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB842297265970E6007468C6 /* Colors.swift */; };
 		EB84229E26597833007468C6 /* ViewDecoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB84229D26597833007468C6 /* ViewDecoded.swift */; };
@@ -75,6 +76,7 @@
 		EB76599426600DA900CF366B /* ArticleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleInteractor.swift; sourceTree = "<group>"; };
 		EB7659982660120700CF366B /* ArticleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleController.swift; sourceTree = "<group>"; };
 		EB7659992660120700CF366B /* ArticleController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleController.xib; sourceTree = "<group>"; };
+		EB7659A426601D7D00CF366B /* ArticleDatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDatabaseManager.swift; sourceTree = "<group>"; };
 		EB84228D26596F9C007468C6 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		EB842297265970E6007468C6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		EB84229D26597833007468C6 /* ViewDecoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDecoded.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			children = (
 				EB5C63D526587529009F7C5F /* DatabaseManagerInterface.swift */,
 				EBED4E79265C0408006A3C29 /* BaseDatabaseManager.swift */,
+				EB7659A426601D7D00CF366B /* ArticleDatabaseManager.swift */,
 			);
 			path = "Local Database";
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				EBE6167426600158003DB585 /* TopSearchBar.swift in Sources */,
 				EBDE9B23265A9B61003BEDE5 /* Urls.swift in Sources */,
 				EBFA9A44265EC77C00FC5F41 /* Constants.swift in Sources */,
+				EB7659A526601D7D00CF366B /* ArticleDatabaseManager.swift in Sources */,
 				EB76599526600DA900CF366B /* ArticleInteractor.swift in Sources */,
 				EB84228E26596F9C007468C6 /* MainNavigationController.swift in Sources */,
 				EB2EE99C2656BFD400D9B727 /* ErrorManager.swift in Sources */,

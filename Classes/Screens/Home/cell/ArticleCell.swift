@@ -13,7 +13,8 @@ class ArticleCell: UITableViewCell {
     @IBOutlet weak var imageArticle: UIImageView!
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelContent: UILabel!
-    
+
+    var onClick: (() -> ())!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,9 +27,15 @@ class ArticleCell: UITableViewCell {
         selectionStyle = .none
     }
     
-    func config(_ article: Article) {
+    func config(_ article: Article, onClick: @escaping (() -> ()) ) {
+        self.onClick = onClick
         labelTitle.text = article.title
         labelContent.text = article.shortText
         imageArticle.setImage(article.imageUrl, defaultImage: .articleDefault)
     }
+    
+    @IBAction func cellClicked(_ sender: Any) {
+        onClick()
+    }
+    
 }
