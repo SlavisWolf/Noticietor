@@ -1,8 +1,8 @@
 //
 //  Declarations.swift
-//  Slashmobility
+//  
 //
-//  Created by Antonio Jesús on 24/05/2021.
+//  Created by
 //
 import UIKit
 
